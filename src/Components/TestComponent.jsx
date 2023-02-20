@@ -10,8 +10,7 @@ const TestComponent = () => {
      next
     </button>
     <div>
-     my name is vishnudsfsfdsfdsfsdfs
-     sfjkbsfb
+     my name is vishnu
     </div>
   </div>
   </React.Fragment>
