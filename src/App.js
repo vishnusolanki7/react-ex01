@@ -1,23 +1,19 @@
-// import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TestComponent from './Components/TestComponent';
-import First from './Components/First';
-import SignupForm from './Components/Form';
-import NavExample from './Components/Nav';
-// import IncrementDecrement from './Components/incVsDec';
-// import ValidationSchemaExample from './Components/FormExm';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TestForm from './Components/TestForm';
+import SignupForm from './Components/SignupForm';
 
 function App() {
   return (
-   <>
-      <NavExample />
-      <SignupForm />
-      <TestComponent name='vishnu' Component={First} />
-      {/* ValidationSchemaExample */}
-      {/* <IncrementDecrement /> */}
-
-   </>
+   <React.Fragment>
+   <Router>
+      <Routes>
+          <Route exact path='/test' element={<TestForm />} />
+      </Routes>
+      </Router>
+   </React.Fragment>
   );
 }
 
